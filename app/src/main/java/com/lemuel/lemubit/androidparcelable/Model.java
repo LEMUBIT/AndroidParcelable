@@ -1,4 +1,5 @@
-/*ne very important thing to pay close attention to is the order that you write and
+/*
+One very important thing to pay close attention to is the order that you write and
 read your values to and from the Parcel. They need to match up in both cases.
 In my example, I write the String and then the int to the Parcel.
 Afterwards, I read them in that same exact order.
@@ -7,7 +8,8 @@ or else you will run into run-time crashes.
 
 Another problem I have encountered is with ClassNotFound exceptions.
 This is an issue with the Classloader not finding your class. To fix this you can manually set the Classloader to use.
-If nothing is set, then it will try the default Classloader which leads to the exception.*/
+If nothing is set, then it will try the default Classloader which leads to the exception.
+*/
 package com.lemuel.lemubit.androidparcelable;
 
 import android.os.Parcel;
