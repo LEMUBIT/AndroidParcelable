@@ -53,8 +53,9 @@ public class Model implements Parcelable {
 
         // This simply calls our new constructor (typically private) and
         // passes along the unmarshalled `Parcel`, and then returns the new object!
-        /*Omar, In few words, "marshalling" refers to the process of converting the data or the objects
-        inbto a byte-stream, and "unmarshalling" is the reverse process of converting the byte-stream beack
+
+        /* In few words, "marshalling" refers to the process of converting the data or the objects
+        into a byte-stream, and "unmarshalling" is the reverse process of converting the byte-stream back
         to their original data or object.*/
         @Override
         public Model createFromParcel(Parcel in) {
